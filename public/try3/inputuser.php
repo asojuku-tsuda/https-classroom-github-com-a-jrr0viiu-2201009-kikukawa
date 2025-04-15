@@ -8,7 +8,11 @@
   <body class="cyberpunk-bg">
     <div class="login-box">
       <h2>
-<?php
+<?php 
+$username = $_GET['username'];
+$useraddress = $_GET['useraddress'];
+$usermail = $_GET['usermail'];
+require 'inputCheck.php';
 echo "あなたが入力した値<br>";
 echo "名前：" . $_GET['username'] . "<br>";
 echo "住所：" . $_GET['useraddress']. "<br>";
