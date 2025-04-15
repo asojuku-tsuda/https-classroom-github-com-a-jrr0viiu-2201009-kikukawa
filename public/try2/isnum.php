@@ -9,9 +9,9 @@
     <div class="login-box">
       <h2>
 <?php
-
-
-echo "入力された数字は： " . $_GET['indata'];
+$indata = $_GET['indata'];
+require ('inputCheck.php');
+echo "入力された数字は： " ,$indata;
 ?>
     </h2>
     </div>
